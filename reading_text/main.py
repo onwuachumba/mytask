@@ -23,7 +23,12 @@ def count_words():
     # [assignment] Add your code here
     count_1=text.count("As")
     count_2=text.count("would")
-    dict_count= dict( my=count_1,would=count_2)
+    my_key_1= "as"
+    my_key_2="would"
+    dict_count= {}
+    dict_count['as']=count_1
+    dict_count['would']=count_2
+
     print(dict_count)
     return dict_count
 count_words()
